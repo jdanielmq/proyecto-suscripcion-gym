@@ -1,7 +1,7 @@
 # 📦 Guía de Instalación Completa - Gross Gym Fitness
 
 > Sistema de Gestión de Suscripciones  
-> Spring Boot 3 + Java 17 + Angular 20 + MySQL
+> Spring Boot 3 + Java 17 + Angular 18 + MySQL
 
 ---
 
@@ -25,7 +25,7 @@
 | Java | 17 | 17 o 21 |
 | Maven | 3.8.1 | 3.9.6 |
 | Node.js | 18.x | 20.x |
-| Angular CLI | 20.x | 20.x |
+| Angular CLI | 18.x | 18.x |
 | MySQL | 8.0 | 8.0.35+ |
 | RAM | 4 GB | 8 GB |
 | Disco | 2 GB | 5 GB |
@@ -156,11 +156,11 @@ npm --version
 
 ```bash
 # Instalar globalmente
-npm install -g @angular/cli@20
+npm install -g @angular/cli@18
 
 # Verificar
 ng version
-# Angular CLI: 20.x.x
+# Angular CLI: 18.x.x
 ```
 
 ### 5. MySQL 8.0
@@ -297,14 +297,14 @@ cat package.json
     "test": "ng test"
   },
   "dependencies": {
-    "@angular/animations": "^20.0.0",
-    "@angular/common": "^20.0.0",
-    "@angular/compiler": "^20.0.0",
-    "@angular/core": "^20.0.0",
-    "@angular/forms": "^20.0.0",
-    "@angular/platform-browser": "^20.0.0",
-    "@angular/router": "^20.0.0",
-    "bootstrap": "^5.3.2",
+    "@angular/animations": "^18.0.0",
+    "@angular/common": "^18.0.0",
+    "@angular/compiler": "^18.0.0",
+    "@angular/core": "^18.0.0",
+    "@angular/forms": "^18.0.0",
+    "@angular/platform-browser": "^18.0.0",
+    "@angular/router": "^18.0.0",
+    "bootstrap": "^5.3.0",
     "rxjs": "~7.8.0"
   }
 }

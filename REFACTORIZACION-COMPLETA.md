@@ -462,7 +462,7 @@ crud-suscripcion-gym/
 
 - ✅ Java 17 (LTS)
 - ✅ Spring Boot 3.2.0
-- ✅ Angular 20
+- ✅ Angular 18
 - ✅ MySQL 8.0
 - ✅ Docker 20+
 - ✅ macOS, Windows, Linux

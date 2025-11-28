@@ -21,7 +21,7 @@ Tener el sistema corriendo localmente:
 java --version      # Java 17+
 mvn --version       # Maven 3.8+
 node --version      # Node.js 18+
-ng version          # Angular CLI 20+
+ng version          # Angular CLI 18+
 mysql --version     # MySQL 8.0+
 ```
 

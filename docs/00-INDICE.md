@@ -1,7 +1,7 @@
 # 📚 Índice de Documentación - Gross Gym Fitness
 
 > Sistema de Gestión de Suscripciones  
-> Spring Boot 3 + Java 17 + Angular 20 + MySQL
+> Spring Boot 3 + Java 17 + Angular 18 + MySQL
 
 ---
 

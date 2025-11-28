@@ -101,7 +101,7 @@ cd frontend && ng serve
 - ✅ **Gestión de Estados** de suscripción (Activo, Vencido, Suspendido, etc.)
 - ✅ **Evaluaciones InBody** con almacenamiento JSON
 
-### Frontend (Angular 20 + Bootstrap 5)
+### Frontend (Angular 18 + Bootstrap 5)
 - ✅ **Interfaz moderna** inspirada en [Gross Gym](https://grossgym.cl/)
 - ✅ **Diseño responsive** mobile-first con Bootstrap 5
 - ✅ **Componentes standalone** (sin NgModules - Angular v20)
@@ -165,7 +165,7 @@ cd frontend && ng serve
 ```
 ┌──────────────────────────────────────────────────────────┐
 │  CAPA DE PRESENTACIÓN (Frontend)                         │
-│  Angular 20 + TypeScript + Bootstrap 5                   │
+│  Angular 18 + TypeScript + Bootstrap 5                   │
 │  ┌────────────┐ ┌────────────┐ ┌────────────┐          │
 │  │ Components │ │  Services  │ │   Models   │          │
 │  │  (Views)   │ │   (HTTP)   │ │ (Interfaces)│          │
@@ -240,7 +240,7 @@ cd frontend && ng serve
 - ✅ **Java 17** o superior ([Descargar](https://adoptium.net/))
 - ✅ **Maven 3.8+** ([Descargar](https://maven.apache.org/download.cgi))
 - ✅ **Node.js 18+** ([Descargar](https://nodejs.org/))
-- ✅ **Angular CLI 20+** (`npm install -g @angular/cli@20`)
+- ✅ **Angular CLI 18+** (`npm install -g @angular/cli@18`)
 - ✅ **MySQL 8.0+** ([Descargar](https://dev.mysql.com/downloads/))
 
 ### Opcionales
@@ -254,7 +254,7 @@ cd frontend && ng serve
 java --version      # Java 17+
 mvn --version       # Maven 3.8+
 node --version      # Node.js 18+
-ng version          # Angular CLI 20+
+ng version          # Angular CLI 18+
 mysql --version     # MySQL 8.0+
 docker --version    # Docker (opcional)
 ```
@@ -583,7 +583,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 ## ✅ ESTADO DEL PROYECTO
 
 - [x] Backend completo (Spring Boot 3 + Java 17)
-- [x] Frontend completo (Angular 20)
+- [x] Frontend completo (Angular 18)
 - [x] Base de datos (MySQL 8.0)
 - [x] API REST documentada (Swagger UI)
 - [x] Dockerización

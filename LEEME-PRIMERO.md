@@ -9,7 +9,7 @@
 **Sistema completo de gestión de suscripciones para gimnasios**
 
 - 🖥️ **Backend:** Spring Boot 3 + Java 17 + MySQL
-- 🎨 **Frontend:** Angular 20 + Bootstrap 5 + Tema Gross Gym
+- 🎨 **Frontend:** Angular 18 + Bootstrap 5 + Tema Gross Gym
 - 📚 **API:** 31+ endpoints REST documentados con Swagger UI
 - 🐳 **Docker:** Listo para contenedores
 
@@ -90,7 +90,7 @@ crud-suscripcion-gym/
 java --version      # Java 17+
 mvn --version       # Maven 3.8+
 node --version      # Node.js 18+
-ng version          # Angular CLI 20+
+ng version          # Angular CLI 18+
 mysql --version     # MySQL 8.0+
 ```
 
@@ -178,7 +178,7 @@ El frontend tiene un **diseño moderno inspirado en [Gross Gym](https://grossgym
 - ✅ CORS configurado
 
 ### Frontend
-- ✅ Angular 20 standalone
+- ✅ Angular 18 standalone
 - ✅ Bootstrap 5 + tema oscuro
 - ✅ Formularios reactivos
 - ✅ Routing completo

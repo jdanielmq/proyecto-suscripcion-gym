@@ -165,7 +165,7 @@ ng: command not found
 
 ```bash
 # Instalar Angular CLI globalmente
-npm install -g @angular/cli@20
+npm install -g @angular/cli@18
 
 # Verificar instalación
 ng version

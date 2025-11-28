@@ -1,0 +1,374 @@
+/* ========================================
+   GROSS GYM FITNESS - Estilos Globales
+   Paleta de colores inspirada en grossgym.cl
+   ======================================== */
+
+/* Variables de color - Gross Gym Theme */
+:root {
+  /* Colores principales - Oscuros y Profesionales */
+  --gym-black: #1a1a1a;
+  --gym-dark: #2d2d2d;
+  --gym-dark-gray: #3a3a3a;
+  
+  /* Color de acento - Naranja vibrante (típico de gimnasios) */
+  --gym-orange: #ff6b35;
+  --gym-orange-hover: #ff5722;
+  --gym-orange-dark: #e64a19;
+  
+  /* Colores secundarios */
+  --gym-red: #d32f2f;
+  --gym-yellow: #ffc107;
+  --gym-green: #4caf50;
+  
+  /* Grises y neutros */
+  --gym-light-gray: #f5f5f5;
+  --gym-medium-gray: #9e9e9e;
+  --gym-border: #e0e0e0;
+  
+  /* Texto */
+  --gym-text-dark: #212121;
+  --gym-text-light: #757575;
+  --gym-text-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  color: var(--gym-text-dark);
+  min-height: 100vh;
+}
+
+.container-fluid {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   TARJETAS - Estilo Moderno Gym
+   ======================================== */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background: linear-gradient(135deg, var(--gym-black) 0%, var(--gym-dark) 100%);
+  color: var(--gym-text-white);
+  font-weight: 700;
+  font-size: 1.3rem;
+  border-radius: 12px 12px 0 0 !important;
+  padding: 18px 24px;
+  border-bottom: 3px solid var(--gym-orange);
+}
+
+.card-body {
+  padding: 24px;
+  background-color: white;
+}
+
+/* ========================================
+   BOTONES - Estilo Gross Gym
+   ======================================== */
+.btn {
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--gym-orange) 0%, var(--gym-orange-dark) 100%);
+  border: none;
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--gym-orange-hover) 0%, var(--gym-red) 100%);
+  box-shadow: 0 6px 20px rgba(255, 87, 34, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-primary:disabled {
+  background: var(--gym-medium-gray);
+  box-shadow: none;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: var(--gym-dark-gray);
+  color: white;
+  border: 2px solid var(--gym-dark-gray);
+}
+
+.btn-secondary:hover {
+  background-color: var(--gym-black);
+  border-color: var(--gym-black);
+  transform: translateY(-2px);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, var(--gym-green) 0%, #388e3c 100%);
+  color: white;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, var(--gym-red) 0%, #c62828 100%);
+  color: white;
+}
+
+.btn-sm {
+  padding: 6px 16px;
+  font-size: 0.85rem;
+}
+
+/* ========================================
+   TABLAS - Estilo Moderno
+   ======================================== */
+.table {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.table thead {
+  background: linear-gradient(135deg, var(--gym-dark) 0%, var(--gym-black) 100%) !important;
+  background-color: #2d2d2d !important;
+}
+
+.table thead th {
+  border-bottom: none !important;
+  font-weight: 700 !important;
+  color: var(--gym-text-white) !important;
+  color: #ffffff !important;
+  padding: 16px !important;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  background-color: transparent !important;
+}
+
+.table thead tr {
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%) !important;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid var(--gym-border);
+  transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #fff8f5;
+}
+
+.table tbody td {
+  padding: 14px 16px;
+  vertical-align: middle;
+}
+
+/* ========================================
+   FORMULARIOS - Estilo Gross Gym
+   ======================================== */
+.form-control {
+  border-radius: 8px;
+  border: 2px solid var(--gym-border);
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--gym-orange);
+  box-shadow: 0 0 0 0.25rem rgba(255, 107, 53, 0.15);
+  background-color: #fff;
+}
+
+.form-label {
+  font-weight: 700;
+  color: var(--gym-text-dark);
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.form-text {
+  color: var(--gym-text-light);
+  font-size: 0.85rem;
+}
+
+/* ========================================
+   NAVBAR - Estilo Gross Gym
+   ======================================== */
+.navbar {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 16px 0;
+}
+
+.navbar-dark {
+  background: linear-gradient(135deg, var(--gym-black) 0%, var(--gym-dark) 100%) !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--gym-text-white) !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+  color: var(--gym-orange) !important;
+}
+
+.nav-link.active {
+  color: var(--gym-orange) !important;
+  font-weight: 700;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gym-orange) 0%, var(--gym-orange-dark) 100%);
+  border-radius: 2px;
+}
+
+/* ========================================
+   BADGES - Estilo Fitness
+   ======================================== */
+.badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-success {
+  background: linear-gradient(135deg, var(--gym-green) 0%, #2e7d32 100%);
+}
+
+.badge-danger {
+  background: linear-gradient(135deg, var(--gym-red) 0%, #b71c1c 100%);
+}
+
+.badge-warning {
+  background: linear-gradient(135deg, var(--gym-yellow) 0%, #f57f17 100%);
+  color: var(--gym-black);
+}
+
+.badge-info {
+  background: linear-gradient(135deg, #2196f3 0%, #1565c0 100%);
+}
+
+/* ========================================
+   ALERTAS - Estilo Moderno
+   ======================================== */
+.alert {
+  border-radius: 10px;
+  border: none;
+  border-left: 5px solid;
+  padding: 16px 20px;
+  font-weight: 500;
+}
+
+.alert-info {
+  background-color: #fff3e0;
+  border-left-color: var(--gym-orange);
+  color: var(--gym-text-dark);
+}
+
+.alert-success {
+  background-color: #e8f5e9;
+  border-left-color: var(--gym-green);
+  color: var(--gym-text-dark);
+}
+
+.alert-danger {
+  background-color: #ffebee;
+  border-left-color: var(--gym-red);
+  color: var(--gym-text-dark);
+}
+
+/* ========================================
+   SPINNER - Loading
+   ======================================== */
+.spinner-border {
+  margin: 50px auto;
+  display: block;
+  border-color: var(--gym-orange);
+  border-right-color: transparent;
+}
+
+/* ========================================
+   UTILIDADES - Espaciado
+   ======================================== */
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* ========================================
+   ENCABEZADOS - Estilo Fitness
+   ======================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--gym-text-dark);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+

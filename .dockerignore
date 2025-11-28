@@ -1,0 +1,65 @@
+# Maven
+target/
+!target/*.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Frontend (no incluir en imagen Docker del backend)
+frontend/
+node_modules/
+dist/
+.angular/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Logs
+*.log
+logs/
+
+# Documentation (no necesaria en imagen)
+docs/
+*.md
+README.md
+DOCUMENTACION.md
+
+# Scripts (no necesarios en imagen)
+scripts/
+
+# Docker (no incluir otros archivos Docker)
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Temporal
+*.tmp
+*.temp
+*.bak
+*.cache
+

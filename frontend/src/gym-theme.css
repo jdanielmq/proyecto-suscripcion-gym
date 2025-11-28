@@ -1,0 +1,333 @@
+/* ========================================
+   GROSS GYM FITNESS - Estilos Adicionales
+   Componentes específicos del tema
+   ======================================== */
+
+/* ========================================
+   TARJETAS DE PLANES - Estilo Premium
+   ======================================== */
+.plan-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 3px solid transparent;
+  background: white;
+  position: relative;
+}
+
+.plan-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #ff6b35 0%, #ff5722 100%);
+}
+
+.plan-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: #ff6b35;
+  box-shadow: 0 15px 40px rgba(255, 107, 53, 0.3);
+}
+
+.plan-card .card-header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  padding: 24px;
+  text-align: center;
+  border-bottom: none;
+}
+
+.plan-card .card-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.plan-card .card-price {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ff6b35;
+  margin: 15px 0;
+}
+
+.plan-card .card-body {
+  padding: 30px;
+  text-align: center;
+}
+
+.plan-feature {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.plan-feature:last-child {
+  border-bottom: none;
+}
+
+.plan-feature i {
+  color: #ff6b35;
+  font-size: 1.2rem;
+}
+
+/* ========================================
+   BOTONES DE ACCIÓN - Estilo Gym
+   ======================================== */
+.btn-gym-primary {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff5722 100%);
+  border: none;
+  color: white;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-gym-primary:hover {
+  background: linear-gradient(135deg, #ff5722 0%, #d32f2f 100%);
+  box-shadow: 0 6px 25px rgba(255, 87, 34, 0.5);
+  transform: translateY(-3px);
+}
+
+.btn-gym-secondary {
+  background: transparent;
+  border: 2px solid #2d2d2d;
+  color: #2d2d2d;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-gym-secondary:hover {
+  background: #2d2d2d;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* ========================================
+   ESTADÍSTICAS - Cards de Dashboard
+   ======================================== */
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #ff6b35;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ff6b35;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #757575;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* ========================================
+   TABLA DE SOCIOS/SUSCRIPCIONES
+   ======================================== */
+.gym-table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gym-table thead {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.gym-table thead th {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 18px;
+  border: none;
+}
+
+.gym-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.2s ease;
+}
+
+.gym-table tbody tr:hover {
+  background-color: #fff8f5;
+  transform: scale(1.01);
+}
+
+.gym-table tbody td {
+  padding: 16px 18px;
+  vertical-align: middle;
+}
+
+/* ========================================
+   FORMULARIOS - Estilo Premium
+   ======================================== */
+.gym-form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gym-form-header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  padding: 20px 30px;
+  margin: -30px -30px 30px -30px;
+  border-radius: 12px 12px 0 0;
+  border-bottom: 3px solid #ff6b35;
+}
+
+.gym-form-header h3 {
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ========================================
+   BADGES DE ESTADO - Fitness Style
+   ======================================== */
+.gym-badge-active {
+  background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+.gym-badge-inactive {
+  background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(211, 47, 47, 0.3);
+}
+
+.gym-badge-pending {
+  background: linear-gradient(135deg, #ffc107 0%, #f57f17 100%);
+  color: #1a1a1a;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.3);
+}
+
+/* ========================================
+   ANIMACIONES
+   ======================================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* ========================================
+   RESPONSIVE - Mobile First
+   ======================================== */
+@media (max-width: 768px) {
+  .gym-brand {
+    font-size: 1.1rem;
+  }
+  
+  .brand-subtitle {
+    display: none;
+  }
+  
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .plan-card .card-price {
+    font-size: 2rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+/* ========================================
+   UTILIDADES GYM
+   ======================================== */
+.gym-accent-text {
+  color: #ff6b35;
+  font-weight: 700;
+}
+
+.gym-divider {
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, #ff6b35 50%, transparent 100%);
+  margin: 30px 0;
+  border: none;
+}
+
+.gym-section-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.gym-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6b35 0%, #ff5722 100%);
+  border-radius: 2px;
+}
+
